@@ -33,9 +33,28 @@ Txn Hash : `0x9e28659822a4ced9ef5b57f9d8c34638f033f90d5f85b7cfe8fd6daed47cba7a`
 
 ## Deploy an ERC20 Token (0xYYYY)
 
+```solidity
+pragma solidity ^0.6.0;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
+contract ERC20Token is ERC20 {
+    constructor(uint256 initialSupply) public ERC20("0xYYYY", "0xY") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+```
+
+```javascript
+const ERC20 = artifacts.require("ERC20Token");
+
+const initialSupply = 1000000;
+
+module.exports = function(deployer) {
+    deployer.deploy(ERC20, initialSupply, {from: accounts[0]})
+};
+```
 
 ## Create a liquidity pool for your token 0xYYYY
 
-
+Not enough funds rn on Rinkeby for the rest of TD
 
