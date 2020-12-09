@@ -1,5 +1,5 @@
 
-## Create a truffle project and configure it on Infura (2pts)
+## Create a truffle project and configure it on Infura
 
 ```console
 $ truffle init
@@ -7,7 +7,7 @@ $ truffle init
 
 https://infura.io/dashboard/ethereum -> Create New Project
 
-## Import Uniswap and Open Zeppelin libraries (2pts)
+## Import Uniswap and Open Zeppelin libraries
 
 ```console
 $ yarn add @uniswap/lib
