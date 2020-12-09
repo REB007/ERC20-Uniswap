@@ -55,6 +55,9 @@ module.exports = function(deployer) {
     deployer.deploy(ERC20, initialSupply, {from: accounts[0]})
 };
 ```
+```console
+$ truffle migrate --network rinkeby
+```
 
 ## Create a liquidity pool for your token 0xYYYY
 
