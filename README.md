@@ -33,6 +33,7 @@ Txn Hash : `0x9e28659822a4ced9ef5b57f9d8c34638f033f90d5f85b7cfe8fd6daed47cba7a`
 
 ## Deploy an ERC20 Token (0xYYYY)
 
+./contracts/ERC20Token.sol
 ```solidity
 pragma solidity ^0.6.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -44,6 +45,7 @@ contract ERC20Token is ERC20 {
 }
 ```
 
+./migrations/4_deploy_contracts.js
 ```javascript
 const ERC20 = artifacts.require("ERC20Token");
 
